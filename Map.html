@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_73ac6c154501516c219d6d691707445b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_73ac6c154501516c219d6d691707445b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_73ac6c154501516c219d6d691707445b = L.map(
+                "map_73ac6c154501516c219d6d691707445b",
+                {
+                    center: [39.199789159047434, 16.7146886866156],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_73ac6c154501516c219d6d691707445b);
+
+            
+
+        
+    
+            var tile_layer_4651d5f78f3cd43860e75f83c757369e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_4651d5f78f3cd43860e75f83c757369e.addTo(map_73ac6c154501516c219d6d691707445b);
+    
+            var marker_4dfa3bd4bc49e87150e3217400b92be2 = L.marker(
+                [39.860159540162, 16.5086048841476],
+                {"maxWidth": 2000}
+            ).addTo(map_73ac6c154501516c219d6d691707445b);
+        
+    
+            marker_4dfa3bd4bc49e87150e3217400b92be2.bindTooltip(
+                `<div>
+                     Partitore Trebisaccce - "Acquedotto Giordomenico"
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e43264710c9e7e2942023e19657831d = L.marker(
+                [39.176653030237, 16.341715157032],
+                {"maxWidth": 2000}
+            ).addTo(map_73ac6c154501516c219d6d691707445b);
+        
+    
+            marker_9e43264710c9e7e2942023e19657831d.bindTooltip(
+                `<div>
+                     Camera di manovra - "Acquedotto Merone"
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22ab992afc79ec0ccd7c0ae941c4590c = L.marker(
+                [38.9660116945324, 17.0813664793968],
+                {"maxWidth": 2000}
+            ).addTo(map_73ac6c154501516c219d6d691707445b);
+        
+    
+            marker_22ab992afc79ec0ccd7c0ae941c4590c.bindTooltip(
+                `<div>
+                     Pozzetto SA3 - Condotta di adduzione alla turbina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7db8b4d52a5d3ce88eb5f594e5923c0 = L.marker(
+                [38.9664871798352, 17.0812082290649],
+                {"maxWidth": 2000}
+            ).addTo(map_73ac6c154501516c219d6d691707445b);
+        
+    
+            marker_c7db8b4d52a5d3ce88eb5f594e5923c0.bindTooltip(
+                `<div>
+                     Pozzetto SA3 - Condotta principale DN1600
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a59876e87a09d208100283967dfe131 = L.marker(
+                [38.947994, 17.01379],
+                {"maxWidth": 2000}
+            ).addTo(map_73ac6c154501516c219d6d691707445b);
+        
+    
+            marker_4a59876e87a09d208100283967dfe131.bindTooltip(
+                `<div>
+                     Centrale CU4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64e14505e760b5b2f7a72637ebc1903f = L.marker(
+                [39.281429509518, 16.2614473700523],
+                {"maxWidth": 2000}
+            ).addTo(map_73ac6c154501516c219d6d691707445b);
+        
+    
+            marker_64e14505e760b5b2f7a72637ebc1903f.bindTooltip(
+                `<div>
+                     III salto "Acquedotto Merone"
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

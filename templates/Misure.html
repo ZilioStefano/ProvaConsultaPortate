@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .btn-group button {
+  background-color: darkgoldenrod; /* Green background */
+  border: 1px solid darkslategrey; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: whitesmoke;
+  color: black;
+
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Portale portate</title>
+</head>
+<body style="background-color: whitesmoke;">
+<img src="data:image/png;base64,{{Logo}}" style="width: 10%; float: right">
+{#<center><h1 style="color: darkslategrey">IL PORTALE</h1></center>#}
+
+<div><div class="btn-group">
+  <button onclick="location.href='{% url 'Mappa' %}'">Mappa</button>
+  <button onclick="location.href='{% url 'Trebisacce' %}'">Partitore Trebisacce</button>
+  <button onclick="location.href='{% url 'Merone3' %}'">Merone III Salto</button>
+</div>
+    <br>
+    <h2 style="color: olive">{{ Name }}</h2>
+<div>{{ Graph | safe }}</div>
+<div>{{ Histo | safe }}</div></div>
+</body>
+</html>
